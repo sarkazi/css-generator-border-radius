@@ -1,0 +1,89 @@
+@import url(nule.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+
+body {
+   padding: 30px;
+   font-family: "Aboreto", sans-serif;
+   font-size: 15px;
+   position: relative;
+   background: linear-gradient(45deg, #fffbf9, #fffdf6);
+   overflow: hidden;
+}
+.main-block {
+   max-width: 2000px;
+   margin: 0 auto;
+   gap: 20px;
+   display: grid;
+   grid-template-columns: 45%;
+}
+.block {
+   display: grid;
+   /*grid-template-areas:
+      "block1__text block1__input-range block1__input-text"
+      "block2__text block2__input-range block2__input-text"
+      "block3__text block3__input-range block3__input-text"
+      "block4__text block4__input-range block4__input-text";*/
+   grid-template-columns: auto 40% minmax(100px, 150px);
+   column-gap: 30px;
+}
+.input-text {
+   background-color: rgb(240, 240, 240);
+   padding: 5px 10px;
+   border-radius: 3px;
+}
+.input-text-px {
+   background-color: rgb(240, 240, 240);
+   padding: 5px 10px;
+   border-radius: 3px;
+}
+.block-text {
+}
+.final-div {
+   background: linear-gradient(45deg, #5a85d6, #1631c5);
+   height: 200px;
+   margin: 50px 0 0 0;
+   transition: all 1s ease;
+}
+.final-div-px {
+   background: linear-gradient(45deg, #5a85d6, #1631c5);
+   height: 200px;
+   margin: 50px 0 0 0;
+   transition: all 1s ease;
+}
+
+.check-unit {
+   position: absolute;
+   top: 50%;
+   right: -40px;
+   height: 130px;
+   background-color: rgb(109, 184, 255);
+   /*width: 70px;*/
+   padding: 7px 12px 7px 7px;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   border-radius: 10px 0 0 10px;
+   transition: all ease 1s;
+}
+.check-unit__px {
+   background-color: #fff;
+   height: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+   font-weight: bold;
+   width: 100px;
+   font-size: 18px;
+}
+.check-unit__procent {
+   background-color: #fff;
+   height: 50%;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   display: flex;
+   font-weight: bold;
+   font-size: 18px;
+}
